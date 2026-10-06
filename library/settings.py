@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'catalogo'
+    'catalog', # o nosso app: sem esta linha o Django ignora models, templates e migrações dele
 ]
 
 MIDDLEWARE = [
@@ -116,6 +116,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Arquivos enviados pelos usuários (ex.: capas dos livros)
+MEDIA_URL = 'media/'  # endereço usado no navegador: /media/book_covers/capa.jpg
+MEDIA_ROOT = BASE_DIR / 'media'  # pasta do computador onde os arquivos ficam guardados
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
