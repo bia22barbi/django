@@ -1,4 +1,3 @@
-
 from django.conf import settings  # dá acesso às configurações do projeto (settings.py)
 from django.db import models  # classes base para criar models e campos
 from django.utils import timezone  # datas e horas respeitando o TIME_ZONE do projeto
